@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Bundi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/profile.jpg" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/profile.jpg" alt="">
+                <h1>Dennis Bundi</h1>
+            </a>
+        </div>
+        <div class="links">
+            <ul>
+                <li onclick="homeSection('home')">Home</li>
+                <li onclick="aboutMe('about')">About</li>
+                <li onclick="myServices('service')">Services</li>
+                <li onclick="myWorks('work')">Work</li>
+                <li onclick="contactMe('contact')">Contact</li>
+            </ul>
+            <img src="assets/menu.png" alt="" id="menu" onclick="showMenu()">
+        </div>
+        <div class="links-small">
+            <ul>
+                <li onclick="homeSection('home')">Home</li>
+                <li onclick="aboutMe('about')">About</li>
+                <li onclick="myServices('service')">Services</li>
+                <li onclick="myWorks('work')">Work</li>
+                <li onclick="contactMe('contact')">Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <main class="main">
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hi, I'm Dennis Bundi</h1>
+        </div>
+        <div class="dynamic-text">
+            <h3 id="dynamic">Full stack web developer</h3>
+            <div class="icons">
+                <a href="https://github.com/codingpanda04" target="_blank"><img src="assets/icons8-github-50.png" alt=""></a>
+                <a href="" target="_blank"><img src="assets/icons8-linkedin-50.png" alt=""></a>
+                <a href="https://www.webnovel.com/profile/4322552387" target="_blank"><img src="assets/icons8-webnovel-50.png" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100085173170693" target="_blank"><img src="assets/icons8-facebook-50 (1).png" alt=""></a>
+                <a href="https://www.instagram.com/dennisbundi5441?igsh=MTVjZXFzYmo0bTU0aQ==" target="_blank"><img src="assets/icons8-instagram-50 (1).png" alt=""></a>
+            </div>
+            <button onclick="contactMe('contact')">Get in touch</button>
+        </div>
+    </section>
+
+    <!--About Me-->
+    <section class="about" id="about">
+        <h1>About Me</h1>
+        <div class="about-container">
+        <div class="profile-img">
+            <img src="assets/profile.jpg" alt="">
+        </div>
+        <div class="about-me">
+            <div class="about-text">
+                <p>I'm a passionate Full Stack Developer and accomplished
+                     Author with expertise in creating both digital 
+                     solutions and compelling narratives. With a 
+                     unique blend of technical skills and creative 
+                     writing abilities,
+                     I bring ideas to life through code and words.<br><br>
+                    As a developer, I specialize in building 
+                    responsive web applications using modern 
+                    technologies. As an author and ghostwriter,
+                     I've published several successful novels
+                      and helped others tell their stories.
+                </p>
+            </div>
+            <div class="experience">
+                <ul class="skills">
+                    <h2>Skills</h2><br>
+                    <li>Full stack development</li>
+                    <li>Creative Writing</li>
+                    <li>Ghostwriting</li>
+                    <li>Web Design</li>
+                </ul>
+                <ul class="exp">
+                    <h2>Experience</h2><br>
+                    <li>2+ Years of Web Development</li>
+                    <li>3 Published Books</li>
+                    <li>Upwork Freelancer</li>
+                    <li>Acquisition Editor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--services-->
+    <section class="services" id="service">
+        <h1>My Services</h1>
+        <div class="container">
+            <div class="cont">
+                <img src="assets/icons8-web-development-50.png" alt="">
+                <div class="service">
+                    <h2>Full Stack Development</h2>
+                    <h5>Building responsive and scalable web applications using modern technologies.</h5>
+                </div>
+            </div>
+            <div class="cont">
+                <img src="assets/icons8-author-50.png" alt="">
+                <div class="service">
+                    <h2>Ghostwriting</h2>
+                    <h5>Professional ghostwriting services for books, articles, and web content.</h5>
+                </div>
+            </div>
+            <div class="cont">
+                <img src="assets/icons8-freelancer-50.png" alt="">
+                <div class="service">
+                    <h2>Freelance Development</h2>
+                    <h5>Custom web development solutions tailored to your specific needs.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Works-->
+    <section class="work" id="work">
+        <h1>My Works</h1>
+        <div class="work-container">
+            <div class="books">
+                <div class="box">
+                    <div class="book-img">
+                        <img src="assets/aba.jpeg" alt="">
+                    </div>
+                    <span id="category">Book</span>
+                    <div class="details">
+                        <h2>A Bastard's Allure</h2>
+                        <p>A compelling novel available on Webnovel.</p>
+                        <button><a href="" target="_blank">View Project</a></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="book-img">
+                        <img src="assets/tfp.jpeg" alt="">
+                    </div>
+                    <span id="category">Book</span>
+                    <div class="details">
+                        <h2>The Fugitive Princess</h2>
+                        <p>A compelling novel available on Webnovel.</p>
+                        <button><a href="" target="_blank">View Project</a></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="book-img">
+                        <img src="assets/tar.jpeg" alt="">
+                    </div>
+                    <span id="category">Book</span>
+                    <div class="details">
+                        <h2 id="extra">The Assassin's Redemption</h2>
+                        <p>A compelling novel available on Webnovel.</p>
+                        <button><a href="" target="_blank">View Project</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="books">
+            <div class="box">
+                <div class="book-img">
+                    <img src="assets/netflix.png" alt="">
+                </div>
+                <span id="category">Web Development</span>
+                <div class="details">
+                    <h2>Netflix Clone</h2>
+                    <p>Full stack netflix clone, fully deployed in MERN stack</p>
+                    <button><a href="https://netflix-clone-ochre-pi.vercel.app/" target="_blank">View Project</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="book-img">
+                    <img src="assets/verbatix-logo.svg" alt="">
+                </div>
+                <span id="category">Web Development</span>
+                <div class="details">
+                    <h2>Verbatix: TTS Software</h2>
+                    <p>Free to use text to speech software and download output.</p>
+                    <button><a href="https://verbatix.vercel.app/" target="_blank">View Project</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="book-img">
+                    <img src="assets/template.jpeg" alt="" id="extens">
+                </div>
+                <span id="category">Web Development (Front End)</span>
+                <div class="details">
+                    <h2>E-Commerce Website</h2>
+                    <p>Front end clothing E-commerce website</p>
+                    <button><a href="https://e-commerce-website-codingpanda04s-projects.vercel.app/" target="_blank">View Project</a></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Testimonials-->
+    <section class="testimonial">
+        <br>
+        <h1>Testimonials</h1>
+        <div class="reviews">
+            <div class="rev-box">
+                <div class="rating">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                </div>
+                <div class="review-text">
+                    <p>"Dennis' web development skills are exceptional. He delivered our project on time and exceeded our expectations."</p>
+                    <div class="reviewer">
+                        <h4>John Doe</h4>
+                        <span>Client</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rev-box">
+                <div class="rating">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                </div>
+                <div class="review-text">
+                    <p>"Working with Dennis as a ghostwriter was amazing. He captured my voice perfectly and helped bring my story to life."</p>
+                    <div class="reviewer">
+                        <h4>Shanon Morris</h4>
+                        <span>Upwork Client</span>
+                    </div>
+            </div>
+            </div>
+            <div class="rev-box">
+                <div class="rating">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50.png" alt="">
+                    <img src="assets/icons8-star-50 (1).png" alt="" id="star">
+                </div>
+                <div class="review-text">
+                    <p>"The Netflix clone project Dennis created was impressive. His attention to detail and technical expertise are outstanding."</p>
+                    <div class="reviewer">
+                        <h4>Avinash Kumar</h4>
+                        <span>Project Sponsor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact me-->
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <div class="contactainer">
+            <div class="contact-info">
+                <h1>Get in Touch</h1><br>
+                <p>Feel free to reach out for any inquiries about web development, ghostwriting, or collaboration opportunities.</p><br>
+                <div class="call">
+                    <img src="assets/icons8-call-50.png" alt="">
+                    <p>+254704095959</p>
+                </div>
+                <div class="email">
+                    <img src="assets/icons8-email-50.png" alt="">
+                    <p>dbundi758@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4e43778b-0a1a-4626-801b-41e2e58e4d49">
+                    <label>Name</label><br>
+                    <input type="text" name="name" required id="name"><br>
+                    <label>Email</label><br>
+                    <input type="email" name="email" required id="email"><br>
+                    <label>Name</label><br>
+                    <textarea placeholder="Your enquiry goes here..." name="message" required id="message"></textarea><br><br>
+                    <button type="submit" onclick="submitForm()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-contents">
+        <div class="me">
+            <h1>Dennis Bundi</h1>
+            <h5>Full stack web developer |Author | Ghostwriter</h5>
+        </div>
+        <div class="quick-links">
+            <h1>Quick Links</h1>
+            <div class="footer-links">
+                <li onclick="homeSection('home')">Home</li>
+                <li onclick="aboutMe('about')">About</li>
+                <li onclick="myServices('service')">Services</li>
+                <li onclick="myWorks('work')">Work</li>
+                <li onclick="contactMe('contact')">Contact</li>
+            </div>
+        </div>
+        <div class="connect">
+            <h1>Connect</h1>
+            <div class="icons">
+                <a href="https://github.com/codingpanda04" target="_blank"><img src="assets/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/dennis-bundi-10a472270/?lipi=urn%3Ali%3Apage%3Aprofile_common_profile_index%3B09ab0b71-b189-4ade-8f64-be81d7b5fdce" target="_blank"><img src="assets/linkedn.png" alt=""></a>
+                <a href="https://www.webnovel.com/profile/4322552387" target="_blank"><img src="assets/icons8-webnovel-50 (2).png" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100085173170693" target="_blank"><img src="assets/fb.png" alt=""></a>
+                <a href="https://www.instagram.com/dennisbundi5441?igsh=MTVjZXFzYmo0bTU0aQ==" target="_blank"><img src="assets/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copy">&copy; 2025 Dennis Bundi. All rights reserved.</p>
+    </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
